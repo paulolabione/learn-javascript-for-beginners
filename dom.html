@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale">
+    <meta name="description" content="This site is about DOM in JavaSript">
+    <title>My First Web Page</title>
+  </head>
+  <body>
+    <div id="output"></div>
+    
+    <script>
+      const out = document.getElementById('output');
+
+      // out.innerHTML += 'My name is Paulo and I am the best'
+
+      function changeText(id) {
+        id.innerHTML = 'new text'
+      };
+    </script>
+
+    <h1 style="background-color: cyan;" onclick='changeText(this)'>Click Here</h1>
+  </body>
+</html>
