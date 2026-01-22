@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"  content="This site is about variables">
+    <title>Variables</title>
+  </head>
+  <body>
+    <h1>JavaScript Variables</h1>
+    <p>Working with variables</p>
+    <p id="demo"></p>
+    <script>
+      let a = 10;
+      let b = 30;
+      let c = a + b
+
+      const out= document.getElementById('demo');
+
+      // out.innerHTML =+ c;
+      out.innerHTML += `${c} <br>`;
+
+    </script>
+  </body>
+</html>
