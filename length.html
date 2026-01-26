@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"  content="This site is about length in JavaScript">
+    <title>Length</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      const out = document.getElementById('demo');
+      let txt = 'Hello, my name is Paulo and I am the best!!!';
+      out.innerHTML += txt;
+      out.innerHTML += `<br><br>This string has ${txt.length} characters`;
+    </script>
+  </body>
+</html>

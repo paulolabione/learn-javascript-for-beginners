@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"  content="This site is about objects">
+    <title>Objects</title>  
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      let car = {type: 'Acura', model: 'Integra', color: 'white'};
+      const out = document.getElementById('demo');
+
+      out.innerHTML += `${car.type}<br>`;
+      out.innerHTML += `${car.model}<br>`;
+      out.innerHTML += `${car.color}<br>`;
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"  content="This site is about random numbers">
+    <title>Random Numbers</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      const out = document.getElementById('demo');
+
+      out.innerHTML += `${Math.random()}<br>`;
+      out.innerHTML += `${Math.min(600, 300, 50, 75, -5, -150)}<br>`;
+      out.innerHTML += `${Math.max(600, 300, 50, 75, -5, -150)}<br>`;
+      out.innerHTML += `${Math.round(15.4)} or ${Math.round(15.6)}<br>`;
+      out.innerHTML += `${Math.floor(15.4)} or ${Math.floor(15.6)}<br>`;
+      out.innerHTML += `${Math.ceil(15.4)} or ${Math.ceil(15.6)}<br>`;
+      out.innerHTML
+    </script>
+  </body>
+</html>

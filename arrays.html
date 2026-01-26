@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"  content="This site is about Arrays">
+    <title>Arrays</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      let fruits= ['Apple', 'Orange', 'Pear', 'Grape', 'Tangerine', 'Mango'];
+      const out = document.getElementById('demo');
+
+      let girls = ['Julie', 'Samanth', 'Laura', 'Jill'];
+      let boys = ['Bob', 'Joe', 'Walt', 'San', 'Fred'];
+
+      let addthem = girls +  boys;
+
+      out.innerHTML += `${addthem}<br>`;
+
+      let combined = boys.concat(girls);
+      out.innerHTML += `${combined}<br>`;
+
+      let fruitsString = fruits.toString();
+      out.innerHTML += `${typeof fruitsString}<br><br>`;
+      out.innerHTML += `${typeof fruits}<br><br>`;
+      out.innerHTML += `${Array.isArray(fruits)}<br><br>`;
+      out.innerHTML += `${Array.isArray(fruitsString)}<br><br>`;
+
+      
+
+      out.innerHTML += `${fruits[0]}<br>`;
+      out.innerHTML += `${fruits[1]}<br>`;
+      out.innerHTML += `${fruits[2]}<br>`;
+      out.innerHTML += `${fruits[3]}<br>`;
+      out.innerHTML += `${fruits[4]}<br>`;
+      out.innerHTML += `${fruits[5]}<br>`;
+      out.innerHTML += `${fruits.length}<br>`;
+      out.innerHTML += `${fruits}<br>`;
+      out.innerHTML += `${fruits.toString()}<br>`;
+      out.innerHTML += `${fruits.join('-')}<br>`;
+      out.innerHTML += `${fruits.pop()}<br>`;
+      out.innerHTML += `${fruits}<br>`;
+      out.innerHTML += `${fruits.shift()}<br>`;
+      out.innerHTML += `${fruits}<br><br>`;
+      out.innerHTML += `${fruits.push('Coconut')}<br>`;
+      out.innerHTML += `${fruits}<br>`;
+      out.innerHTML += `${fruits.unshift('Cherry')}<br>`;
+      fruits[0] = 'Strayberry';
+      out.innerHTML += `${fruits}<br>`;
+      out.innerHTML += `${fruits.join(' - ')}<br>`;
+      delete fruits[2];
+      out.innerHTML += `${fruits}<br>`;
+      fruits.splice(2,'Lemon', 'Banana');
+      out.innerHTML += `${fruits}<br>`;
+      fruits.sort();
+      out.innerHTML += `${fruits}<br>`;
+      fruits.reverse();
+      out.innerHTML += `${fruits}<br>`;
+
+
+      
+
+    </script>
+  </body>
+</html>
