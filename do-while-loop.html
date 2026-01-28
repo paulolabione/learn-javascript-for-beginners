@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"  content="This site is about do while loop">
+    <title>Do White loop</title>
+  </head>
+  <body>
+    <button onclick="myFunction()">Click Me</button>
+    <button onclick="myFunction2()">Click Me2</button>
+    <p id="demo"></p>
+  </body>
+
+  <script>
+    const out = document.getElementById('demo');
+
+    function myFunction() {
+      let i = 0;
+      do {
+        out.innerHTML += `${i}<br>`;
+        i++;
+      }
+      while (i < 10);
+    }
+
+    function myFunction2() {
+      let j = 0;
+      while (j < 10) {
+        out.innerHTML += `${j}<br>`;
+        j++;
+      }
+    }
+  </script>
+</html>

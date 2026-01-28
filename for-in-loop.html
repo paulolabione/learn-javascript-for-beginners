@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"  content="This site is about for in loop">
+    <title>For In loop</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      let txt = '';
+      let person = {fname: 'John', lname: 'Smith', age: 30};
+      let x;
+      const out = document.getElementById('demo');
+
+      for (x in person) {
+        document.write(x);
+        txt += person[x] + ' ';
+        out.innerHTML += `${x}<br>`;
+      }
+      
+      out.innerHTML += `${txt}<br>`;
+      out.innerHTML += `${person.fname}<br>`;
+      out.innerHTML += `${person['fname']}<br>`;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta nam="description" content="This site is about statements">
+    <title>Conditional Statements</title>
+  </head>
+  <body>
+    <div id="output"></div>
+
+    <script>
+      const out = document.getElementById('output');
+
+      let score = prompt('What is your score? ')
+
+      if (score < 50) {
+        out.innerHTML += `You have an F`;
+      }
+      else if (score < 70)  {
+        out.innerHTML += `You have an D`;
+      }
+      else if (score < 80)  {
+      out.innerHTML += `You have an C`;
+      }    
+      else if (score < 90)  {
+      out.innerHTML += `You have an B`;
+      }
+        else if (score <= 100)  {
+        out.innerHTML += `You have an A<br><br>EXCELLENT`;
+      }
+      else {
+        out.innerHTML += `The score cannot be more than 100!!!`
+      }
+    </script>
+  </body>
+</html>

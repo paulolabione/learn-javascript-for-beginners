@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"  content="This site is about break and continue">
+    <title>Break and Continue</title>
+  </head>
+
+  <body>
+    <p id="demo"></p>
+
+    <script>
+      const out = document.getElementById('demo');
+
+      let i = 0;
+
+      for (i = 0; i < 10; i++) {
+        // if (i === 3) {break};
+        if (i === 5) {continue};
+        out.innerHTML += `${i}<br>`;
+      }
+    </script>
+  </body>
+</html>
